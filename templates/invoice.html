@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>invoice</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div  style="width: 400px; margin:30px auto; text-align:center;">
+            <div>
+                <h2>
+                    Here is you invoice
+                </h2>
+            </div>
+	    <div style='width: 100%; overflow: auto'>	
+                <p id='invoice' style='word-wrap: break-word;' class='text-break'>
+                    {{ p_invoice }}
+                </p>
+            </div>
+            <button onclick='copy()' id='copy' class="btn btn-primary">Copy</button>
+            <div>
+                <h3>or scan</h3>
+                <img style="width: 200px; height: 200px;", src='../{{qr}}'>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function copy() {
+            var text = document.getElementById("invoice").innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            window.alert("Successfully copied");
+        }
+    </script>
+  </body>
+</html>
