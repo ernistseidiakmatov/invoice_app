@@ -22,4 +22,8 @@ To install the LND Invoice Generator, follow these steps:
    ```shell
    python3 main.py
 
-6. Check out the demo running on the testnet by visiting this [link](http://donate-on-lightning.us.to).
+Donatin page:
+![Alt text](/static/Donation-page.png?raw=true "Donation page")
+
+Invoice page:
+![Alt text](/static/Invoice-page.png?raw=true "Invoice page")
