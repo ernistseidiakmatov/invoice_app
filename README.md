@@ -23,7 +23,7 @@ To install the LND Invoice Generator, follow these steps:
    python3 main.py
 
 Donatin page:
-![Alt text](/static/Donation-page.png?raw=true "Donation page")
+![Alt text](/static/Donate-page.png?raw=true "Donation page")
 
 Invoice page:
 ![Alt text](/static/Invoice-page.png?raw=true "Invoice page")
